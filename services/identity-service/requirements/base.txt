@@ -1,0 +1,27 @@
+# ============================================================
+# Identity Service — Base dependencies
+# ============================================================
+
+# --- Core ---
+Django==5.2.17
+djangorestframework==3.16.0
+
+# --- Auth / JWT ---
+djangorestframework-simplejwt==5.5.1
+PyJWT[crypto]==2.10.1
+argon2-cffi==23.1.0
+
+# --- CORS ---
+django-cors-headers==4.7.0
+
+# --- Database ---
+psycopg[binary]==3.2.4
+
+# --- Config / Env ---
+python-dotenv==1.1.0
+
+# --- Logging ---
+python-json-logger==3.3.0
+
+# --- HTTP Client (for internal service calls) ---
+httpx==0.28.1

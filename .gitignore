@@ -1,0 +1,72 @@
+# ============================================================
+# BusGo — Root .gitignore
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------- Virtual Environments ----------
+.venv/
+venv/
+env/
+ENV/
+
+# ---------- Django ----------
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# ---------- FastAPI / SQLAlchemy ----------
+*.db
+*.sqlite3
+
+# ---------- Environment ----------
+.env
+.env.local
+.env.*.local
+*.env
+
+# ---------- Testing ----------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ---------- Type Checking ----------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ---------- IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+
+# ---------- Docker ----------
+docker-compose.override.yml
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- Celery ----------
+celerybeat-schedule
+celerybeat.pid
